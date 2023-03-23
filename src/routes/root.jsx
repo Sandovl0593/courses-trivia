@@ -4,11 +4,11 @@ import Graduates from '../components/graduates'
 
 const router = createBrowserRouter([
   {
-      path: "/",
-      element: <AppMain />
+    path: "/",
+    element: <AppMain />
   }, {
-      path: "/graduates",
-      element: <Graduates />
+    path: "/graduates",
+    element: <Graduates />
   }
 ]);
 

@@ -24,7 +24,10 @@ function AppMain() {
       <h1>Welcome to the courses Trivia</h1> <br/>
       <div>
         <Link to="/graduates">
-          <button className='clasic-btn start-btn'>Start</button>
+          <button className='clasic-btn start-btn' onClick={() => {
+            let App = document.getElementsByClassName('App')[0];
+            console.log(App);
+          }}>Start</button>
         </Link>
       </div>
     </div>

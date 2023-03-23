@@ -1,6 +1,7 @@
 .Graduates {
   text-align: center;
   width: inherit;
+  animation: ease-aparition 1s ease-in-out;
 }
 
 .grads-list {
@@ -14,4 +15,26 @@
   padding: 20px;
   background-color: rgb(35, 165, 235);
   cursor: pointer;
+  transition: 200ms;
+}
+
+.grads-list div:hover {
+  background-color: #68ece84d;
+  padding-top: 10px;
+  transition: 200ms;
+  transform: scale(1.2,1.2);
+}
+
+.grads-list div:hover p {
+  transition: 200ms;
+  font-size: 20px;
+}
+
+.grad-btn {
+  /* display: none; */
+  background-color: #1d3f3e4d;
+  height: 3.4rem;
+  position: absolute;
+  transition: 1s;
+  animation: ease-aparition 1s ease-in-out;
 }
