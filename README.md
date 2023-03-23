@@ -1,1 +1,1 @@
-### Trivia questions about pregraduate courses 2021-2 with React + Vite
+# Trivia questions about pregraduate courses 2021-2 with React + Vite

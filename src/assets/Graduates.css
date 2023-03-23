@@ -1,0 +1,17 @@
+.Graduates {
+  text-align: center;
+  width: inherit;
+}
+
+.grads-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grads-list div {
+  height: 20em;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(35, 165, 235);
+  cursor: pointer;
+}
