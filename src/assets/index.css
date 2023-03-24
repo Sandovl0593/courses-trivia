@@ -4,13 +4,18 @@
   color-scheme: light dark;
   line-height: 1.5;
   color: #ffff;
-  background-color: #242424;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+  
+  --size-root-width: 1580px;
+  --dark-background-color-transp: rgb(36, 36, 36, 0.4);
+  --dark-background-color: #242424;
+
+  background-color: var(--dark-background-color);
 }
 
 #root {
-  max-width: 1580px;
+  max-width: var(--size-root-width);
   margin: 0 auto;
   font-family: 'ubuntu', system-ui, Avenir, Helvetica, Arial, sans-serif;
   padding: 1rem;

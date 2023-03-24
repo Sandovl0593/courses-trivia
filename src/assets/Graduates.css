@@ -1,6 +1,7 @@
 .Graduates {
   text-align: center;
-  width: inherit;
+  display: grid;
+  width: var(--size-root-width);
   animation: ease-aparition 1s ease-in-out;
 }
 
@@ -25,16 +26,23 @@
   transform: scale(1.2,1.2);
 }
 
-.grads-list div:hover p {
-  transition: 200ms;
-  font-size: 20px;
+.gradinfo-box {
+  width: inherit;
+  height: 20cm;
+  background-color: var(--dark-background-color-transp);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.grad-btn {
-  /* display: none; */
+.gradinfo-box div {
   background-color: #1d3f3e4d;
-  height: 3.4rem;
-  position: absolute;
-  transition: 1s;
+  height: 12cm;
+  width: 30cm;
   animation: ease-aparition 1s ease-in-out;
 }
+
+.X-btn {
+  background-color: #595959;
+} 
