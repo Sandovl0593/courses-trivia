@@ -25,8 +25,8 @@ function AppMain() {
       <div>
         <Link to="/graduates">
           <button className='clasic-btn start-btn' onClick={() => {
-            let App = document.getElementsByClassName('App')[0];
-            console.log(App);
+            // let App = document.getElementsByClassName('App')[0];
+            // console.log(App);
           }}>Start</button>
         </Link>
       </div>

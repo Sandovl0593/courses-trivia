@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
 
+@keyframes ease-aparition {
+  from {
+    opacity: 0;
+    transform: translateY(-1em)
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ease-hidding {
+  from {
+    opacity: 100%;
+    transform: translateY(0)
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+}
+
 :root {
   color-scheme: light dark;
   line-height: 1.5;
@@ -8,8 +30,10 @@
   -webkit-text-size-adjust: 100%;
   
   --size-root-width: 1580px;
-  --dark-background-color-transp: rgb(36, 36, 36, 0.4);
   --dark-background-color: #242424;
+  --dark-background-color-transp: rgb(36, 36, 36, 0.4);
+  --ease-aparition-default: ease-aparition 0.5s ease-in-out;
+  --ease-hidding-default: ease-hidding 0.5s ease-in-out;
 
   background-color: var(--dark-background-color);
 }

@@ -2,7 +2,7 @@
   text-align: center;
   display: grid;
   width: var(--size-root-width);
-  animation: ease-aparition 1s ease-in-out;
+  animation: var(--ease-aparition-default);
 }
 
 .grads-list {
@@ -27,22 +27,29 @@
 }
 
 .gradinfo-box {
-  width: inherit;
-  height: 20cm;
-  background-color: var(--dark-background-color-transp);
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gradinfo-box div {
   background-color: #1d3f3e4d;
+  margin: 5cm 0 0 8cm;
   height: 12cm;
-  width: 30cm;
-  animation: ease-aparition 1s ease-in-out;
+  width: 20cm;
+  animation: var(--ease-aparition-default);
 }
 
-.X-btn {
-  background-color: #595959;
-} 
+/* .gradinfo-box-closed {
+  position: absolute;
+  background-color: #1d3f3e4d;
+  margin: 5cm 0 0 8cm;
+  transform: traslateY(-99em);
+  opacity: 0;
+  height: 12cm;
+  width: 20cm;
+  animation: var(--ease-hidding-default);
+} */
+
+#X-btn:focus {
+  background-color: #c02525;
+}
+
+/* #X-btn + #gradinfo-box div {
+  opacity: 0;
+} */
