@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('assets/Ubuntu-Regular.ttf');
+}
+
+:root {
+  color-scheme: light dark;
+  color: #ffff;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+
+  --main-nav-height: 4em;
+
+  --dark-background-color: #242424;
+  --dark-background-color-transp: rgb(36, 36, 36, 0.4);
+  --ease-aparition-default: ease-aparition 0.5s ease-in-out;
+  --ease-hidding-default: ease-hidding 0.5s ease-in-out;
+
+  background-color: var(--dark-background-color);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* optimization moves in page */
+@media (prefers-reduced-motion: no-preference) {
+  .react-logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+#root, body {
+  margin: 0 auto;
+  font-family: 'ubuntu', system-ui, sans-serif;
+  font-synthesis: none;
+}
